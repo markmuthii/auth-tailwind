@@ -1,1 +1,21 @@
 @import "tailwindcss";
+
+@theme {
+  --color-whitesmoke: whitesmoke;
+}
+
+.paragraph {
+  @apply text-yellow-400 font-bold font-sans;
+}
+
+.body-classes {
+  @apply text-2xl min-h-screen flex flex-col bg-linear-to-br from-gray-500 via-gray-50 to-gray-400 text-gray-800;
+}
+
+.bg-image {
+  background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/green-natural-background-with-wooden-surface-free-image.jpeg?w=1900&quality=70");
+}
+
+.tw {
+  color: whitesmoke;
+}

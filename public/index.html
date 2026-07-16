@@ -3,8 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Auth System Landing</title>
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body class="bg-black text-2xl"></body>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <main
+      class="mx-auto flex min-h-screen max-w-7xl flex-col px-6 py-8 lg:px-8"
+    >
+      <header
+        class="flex items-center justify-between rounded-full border border-slate-800 bg-slate-900/70 px-6 py-4 backdrop-blur"
+      >
+        <a href="index.html" class="text-lg font-semibold tracking-wide"
+          >SecureAuth</a
+        >
+        <nav class="flex gap-6 text-sm text-slate-300 items-center">
+          <a href="login.html" class="transition hover:text-white">Login</a>
+          <a
+            href="register.html"
+            class="rounded-full bg-cyan-500 px-4 py-2 font-medium text-slate-950 transition hover:bg-cyan-400"
+            >Register</a
+          >
+        </nav>
+      </header>
+
+      <section
+        class="grid flex-1 items-center gap-10 py-16 lg:grid-cols-[1.1fr_0.9fr] lg:py-24"
+      >
+        <div class="space-y-6">
+          <span
+            class="inline-flex rounded-full border border-cyan-400/40 bg-cyan-500/10 px-3 py-1 text-sm text-cyan-300"
+            >Modern authentication, made simple</span
+          >
+          <h1 class="text-4xl font-semibold leading-tight sm:text-5xl">
+            Build trust with a polished auth experience.
+          </h1>
+          <p class="max-w-xl text-lg text-slate-300">
+            Create an account, sign in securely, and manage users from one
+            elegant dashboard.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="register.html"
+              class="rounded-full bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400"
+              >Create account</a
+            >
+            <a
+              href="login.html"
+              class="rounded-full border border-slate-700 px-6 py-3 font-semibold text-slate-200 transition hover:border-cyan-400 hover:text-white"
+              >Login</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="rounded-3xl border border-slate-800 bg-slate-900/80 p-8 shadow-2xl shadow-cyan-950/30"
+        >
+          <h2 class="text-xl font-semibold">Why teams love it</h2>
+          <div class="mt-6 space-y-4 text-sm text-slate-300">
+            <div
+              class="rounded-2xl border border-slate-800 bg-slate-950/70 p-4"
+            >
+              <p class="font-semibold text-white">Fast onboarding</p>
+              <p class="mt-2">
+                Collect account details with a streamlined form and clear
+                validation.
+              </p>
+            </div>
+            <div
+              class="rounded-2xl border border-slate-800 bg-slate-950/70 p-4"
+            >
+              <p class="font-semibold text-white">Insightful admin view</p>
+              <p class="mt-2">
+                Monitor signups and track user activity from a polished
+                dashboard.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
